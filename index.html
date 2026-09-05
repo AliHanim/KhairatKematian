@@ -82,6 +82,11 @@
     font-weight:600;
     margin-bottom:6px;
   }
+  .field-num{
+    font-family:'Amiri',serif;
+    color:var(--gold);
+    margin-right:4px;
+  }
   .field .hint{
     font-weight:400;
     color:#7a8880;
@@ -228,17 +233,17 @@
 
   <form id="khairatForm">
     <div class="field">
-      <label class="required" for="namaPenuh">Nama Penuh</label>
+      <label class="required" for="namaPenuh"><span class="field-num">1.</span>Nama Penuh</label>
       <input type="text" id="namaPenuh" required>
     </div>
 
     <div class="field">
-      <label class="required" for="noKP">No. Kad Pengenalan</label>
+      <label class="required" for="noKP"><span class="field-num">2.</span>No. Kad Pengenalan</label>
       <input type="text" id="noKP" placeholder="cth: 800101-05-1234" required>
     </div>
 
     <div class="field">
-      <label>No. Telefon</label>
+      <label><span class="field-num">3.</span>No. Telefon</label>
       <div class="tel-row">
         <div><span>Rumah (R)</span><input type="tel" id="telR"></div>
         <div><span>Bimbit (H/P)</span><input type="tel" id="telHP"></div>
@@ -247,7 +252,7 @@
     </div>
 
     <div class="field">
-      <label class="required" for="alamat">Alamat Rumah</label>
+      <label class="required" for="alamat"><span class="field-num">4.</span>Alamat Rumah</label>
       <textarea id="alamat" required></textarea>
     </div>
 
